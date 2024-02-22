@@ -1,0 +1,31 @@
+Podstawowe polecenia
+● passwd - komenda do zmiany hasła
+● man [polecenie] - wyświetla instrukcję dla każdego polecenia używanego w programie Terminal
+● who - wypisuje aktualnie zalogowanych użytkowników i używane przez nich terminale
+● whoami - wyświetla informacje o aktualnie zalogowanym użytkowniku
+● ls - wyświetlenie samych nazw plików
+● pwd - wyświetla pełną ścieżkę do obecnego katalogu roboczego
+● tree - Służy do wyświetlania zawartości podanego katalogu i wszystkich jego podkatalogów w formie drzewka
+● ls -l - wyświetlenie dokladna zawartosc katalogu 
+● ls / - wyswietla nazwy wszystkich dostepnych katalogow 
+● cd - polecenie powłoki, służące do przemieszczenia się pomiędzy katalogami w systemie operacyjnym
+● mkdir - można utworzyć jeden lub kilka katalogów podanych w parametrze katalog
+● rmdir - służy do usuwania pustych katalogów w systemie Linux
+● rm - usuwa pliki oraz katalogi z systemu plików
+● exit - komenda służąca do zakończenia procesu powłoki
+Jakie oznaczenia mają poniższe katalogi?
+● bieżący - "."
+● nadrzędny - ".."
+● główny - "/"
+● domowy - "~"
+Jakie elementy oznaczają poniższe symbole?
+● -  zwykły plik
+● d - katalog
+● c - plik specjalny znakowy 
+● b - plik specjalny blokowy
+● l - link symboliczny
+Zadanie
+● Utwórz katalog Dane.		mkdir dane
+● Wejdź do utworzonego katalogu.	cd dane
+● Przejdź do katalogu domowego.		cd ~
+● Sprawdź jakie elementy znajdują się w katalogu głównym   	ls -l
