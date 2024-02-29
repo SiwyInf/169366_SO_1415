@@ -1,0 +1,16 @@
+ZAD 1 
+mkdir st_2024
+mkdir Dane
+mkdir Teksty
+mkdir Listy
+mkdir Podania
+mkdir Programy
+mkdir C
+mkdir Shell
+mkdir Skrypty
+
+ZAD 2 
+touch  Zestawienie.txt
+nano Zestawienie.txt
+cp ./Teksty/Zestawienie.txt ./Programy/Shell/Skrypty/spis24.txt
+cat spis24.txt
