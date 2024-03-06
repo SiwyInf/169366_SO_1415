@@ -14,3 +14,30 @@ touch  Zestawienie.txt
 nano Zestawienie.txt
 cp ./Teksty/Zestawienie.txt ./Programy/Shell/Skrypty/spis24.txt
 cat spis24.txt
+
+ZAD 3
+basename "$(pwd)"
+
+ZAD 4
+ln-s /home/Szeluga/st_2024/Dane/home/Szeluga/st_2024/Teksty/Podania/Odsylacz_Dane
+
+ZAD 5
+ln-s /home/Szeluga/st_2024/Programy/Shell/Skrypty/home/Szeluga/st_2024/Teksty/Podania/Skrypty_Odsylacz
+
+ZAD 6
+ln-s /home/Szeluga/st_2024/Teksty/Zestawienie.txt /home/Szeluga/st_2024/Teksty/Listy/DoZestawienia
+
+ZAD 7
+touch ListDoEwy.txt OlaChceKota.txt WielkieOczy.txt ToNieJestList list.txt
+
+ZAD 8
+mv /home/Szeluga/st_2024/Teksty/Listy/ListDoEwy.txt OlaChceKota.txt WIelkieOczy.txt ToNieJestList list.txt /home/Szeluga/st_2024/Teksty/Podania/
+
+ZAD 10
+rm -r Programy
+
+ZAD 11
+cp List /home/Szeluga/st_2024/Teksty/Listy/
+
+ZAD 12
+rm ????.txt
