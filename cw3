@@ -1,0 +1,32 @@
+mkdir Dane
+mkdir Przepisy
+mkdir Notatki
+touch Zapiski.txt
+nano Zapiski.txt
+
+ln -s Notatki/Zapiski.txt Przepisy/AdZapisek
+
+chmod 744 Notatki/
+chmod 764 Kopie/
+chmod 741 Zapiski.txt
+
+touch Plik_testowy.txt
+ls -l
+cat Plik_testowy.txt
+cp Plik_testowy.txt ~/Notatki/Kopie/
+mv Plik_testowy.txt ~/Notatki/
+
+ls -l WSZYSTKIE 
+
+umask 0027
+
+mkdir Proba1
+
+touch plik1.txt
+ls -l
+
+i - węzeł to element struktury systemow plikow miedzy innymi. Są to struktury opisujace pliki w systemie
+
+ls -i (13763468
+
+Musi odnalezc sciezke pliku potem wyszukac i - wezel nastepnie odczytac ten i - wezel, potem odczytac dane z dysku i przekazac je do aplikacji 
