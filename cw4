@@ -1,0 +1,42 @@
+zad1 
+a
+touch dane22
+echo PogodaLadna >> dane22
+ls -l >> dane22
+pwd >> dane22
+
+b
+touch drzewo
+tree >> drzewo
+touch wynik
+ls -l ~/dane22 > wynik
+ls -l ~/drzewo >> wynik
+
+c
+touch test
+cat dane22 | cat drzewo | cat wynik < test
+d
+w | wc -l
+e
+s169366@orfi:~$ find . -type d,f | wc -l
+
+zad2 
+a
+find . -maxdepth 2 -type f -empty
+b
+cd /dev
+find -type c | wc -l
+c
+cd /home
+find -maxdepth 2 -perm  -u=r-x
+
+
+
+
+
+
+
+
+
+
+
