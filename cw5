@@ -1,0 +1,22 @@
+zad1
+echo $HOME WYSKAKUJE /home/domena/s169366
+W TEN SPOSOB MOZEMY ZOBACZYC USTAWIENIE ZMIENNEJ HOME
+
+zad2
+nano tekst21_03.txt
+
+zad3
+a
+grep '^ala' tekst21_03.
+b
+grep 'tola i ala$' tekst21_03.txt
+c 
+grep -E 'a+ | l+' tekst21_03.txt
+d
+
+e
+
+
+
+
+
