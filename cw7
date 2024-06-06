@@ -1,0 +1,101 @@
+1.
+a) wyswietla tylko 1,3 i 6 pole, pola oddzielane znakiem :
+b) niweluje powtórzenia ":" po sobie, wyswietla pola 1,3,5 oddzielone od siebie znakiem ":"
+c) niweluje powtórzenia ":" po sobie, wyswietla pola 1,3,5 oddzielone od siebie znakiem ":" i na koniec zamienia znak ":" na spację
+
+2. ls -l | cut -d ' ' -f2-5,7-9
+  ls -l | cut -d ' ' -f1,6,10
+dwa sposoby interpretacji polecenia
+
+
+3. 
+a) podaje dlugosc ciagu znakow
+b) usuwa do pierwszego wystapienia wlacznie od prawej
+c) usuowa do ostatniego wystapienia wlacznie od prawej
+d) usuwa do pierwszego wystapienia wlacznie od lewej
+e) usuwa do ostatniego wystapienia wlacznie od lewej
+
+8.
+ppnkt 2
+
+#!/bin/bash
+f(){
+local sum=$[$1+$2]
+local iloczyn=$[$1*$2]
+globalsum=$sum
+globaliloczyn=$iloczyn
+}
+echo "a=$1 b=$2"
+f $1 $2
+echo $globalsum
+echo $globaliloczyn
+
+8.3.1
+
+#!/bin/bash
+bb1=7
+zm1=33
+f(){
+local zm1=11
+bb1=$[$bb1+$zm1]
+echo $zm1
+}
+f
+echo $zm1
+echo $bb1
+
+8.3.2
+#!/bin/bash
+f(){
+echo $*
+}
+
+f $2 $3 122 34
+
+8.3.3
+#!/bin/bash
+f(){
+local sum=$[$1 + $2]
+echo $sum
+globalsum=$sum
+}
+f $1 $2
+echo $globalsum
+
+8.4
+#!/bin/bash
+if [ $1 -eq 1 ]; then
+	if [ -d $2 ]; then
+	rm -r "$2"
+
+	else
+	mkdir "$2"
+	fi
+fi
+
+if [ $1 -eq 2 ]; then
+echo $HOME > $2
+fi
+
+f3(){
+echo "$*"
+}
+
+if [ $1 -eq 3 ]; then
+echo FUNKCJA 3
+f3 "$*"
+fi
+
+8.5
+#!/bin/bash
+if [ $1 -eq 1 ]; then
+tree ~ > Dane
+fi
+
+if [ $1 -eq 2 ]; then
+find ~ -maxdepth 3 -type d | wc -l
+fi
+
+if [ $1 -eq 3 ]; then
+tree ~
+fi
