@@ -1,0 +1,52 @@
+9.
+
+#!/bin/bash
+echo skrypt
+if [ $# -lt 2 ]
+then
+echo Za mało parametrów
+exit 11
+elif [ $# -eq 2 ]
+then
+mkdir "$2"
+elif [ $# == 3 ]
+then
+        if [ $1 = "szukaj" ]
+        then
+        echo $(find . -type f | wc -l)
+        fi
+fi
+10.
+
+#!/bin/bash
+echo skrypt
+
+echo Podaj nazwe pliku:
+read filename
+
+getent group | cut -d: -f1 > "$filename"
+group_count=$(wc -l < "$filename")
+user1_count=$(grep -c "user1" "$filename")
+echo "Ile razy wystąpił 'user1': $user1_count"
+11.
+#!/bin/bash
+echo Podaj sciezke do katalogu
+read path
+echo $(find "$path" -type f -name "b*" | wc -l)
+echo $(find "$path" -type f -name "[kmp]*" | wc -l)
+echo $(find "$path" -type f -name "d?????" | wc -l)
+echo $(find "$path" -type f -name "[^bkmpd]?s*" | wc -l)
+12.
+#!/bin/bash
+
+if [ $1 = $0 ]
+then
+
+find $HOME -type f -perm -u=rwx > $2
+
+else
+
+ps -f --ppid 1
+ps -f --ppid 1 | wc -l
+
+fi
