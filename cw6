@@ -1,0 +1,25 @@
+zadanie 1
+a=5
+echo $a
+b=12
+echo$b
+if [$a -lt $b]
+then echo liczba b mniejsza
+else echo liczba a mniejsza
+fi
+zadanie 2
+if [ -f $HOME/dane.txt ]
+then echo istnieje plik
+else echo nie istnieje plik
+fi
+zadanie 3
+zmiennazadanie3="zmienna testowa"
+if [ -n '$zmiennazadanie3' ]
+then echo jest niezerowy
+else echo jest zerowy
+fi
+zadanie 4
+if [ "$PWD" = "$HOME" ]
+then echo 'jest katalogiem domowym'
+else echo 'nie jest katalogiem domowym'
+fi
