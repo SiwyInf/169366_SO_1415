@@ -1,0 +1,17 @@
+1.
+  1. ps -A | wc -l
+  145
+  2. ps -u root -f
+  3. ps -ejH lub ps axjf
+  4. ps -C bash -o pri
+  19
+2. 
+  1. top T
+  PID UŻYTK.    PR  NI    WIRT    REZ    WSP S  %CPU  %PAM     CZAS+ KOMENDA
+  455 mysql     20   0 2846268 160976  11292 S   0,7   4,0 224:53.93 mysqld
+  2. top M
+  PID UŻYTK.    PR  NI    WIRT    REZ    WSP S  %CPU  %PAM     CZAS+ KOMENDA
+  455 mysql     20   0 2846268 160976  11292 S   0,7   4,0 224:54.08 mysqld
+  3. ps -C top -o pid,ppid,pri
+  PID     PPID     PRI
+  1707869 1707418  19
