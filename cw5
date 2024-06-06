@@ -1,22 +1,44 @@
-zad1
-echo $HOME WYSKAKUJE /home/domena/s169366
-W TEN SPOSOB MOZEMY ZOBACZYC USTAWIENIE ZMIENNEJ HOME
-
-zad2
+1.
+a)wypisuje nam ściężke do katalogu aktualnie zalogowanego użytkownika
+b)wypisuje output poprzedniej komendy w terminalu
+2.
+touch tekst21_03.txt
 nano tekst21_03.txt
+(przepisanie podanego tekstu)
+3.
+a)grep '^ala' *
+b)grep 'tola i ala$' *
+c)grep '\<ala\>' *
+d)grep '\<.\|\|.\>' *
+e)grep -cE '^(ala|alla)' *
+f)grep 'o,' *
+g)grep '\\' *
+h)grep '4' * | grep -v '4\*'
+4.
+export nn1=10
+export nn2=5
+nn1=$(($nn1 + $nn2))
+unset nn2
+echo "$nn2"
+5.
+if [[ ":$PATH:" != *":$(pwd):"* ]]; then
+    export PATH="$PATH:$(pwd)"
+fi
+6.
+nano ~/.bashrc
+PS1="\d \@\u@\h:\w $ "
+source ~/.bashrc
 
-zad3
-a
-grep '^ala' tekst21_03.
-b
-grep 'tola i ala$' tekst21_03.txt
-c 
-grep -E 'a+ | l+' tekst21_03.txt
-d
-
-e
-
-
-
-
-
+7.
+a)
+nano ~/.bashrc
+export PS1="\[\033[38;5;13m\]\t \[\033[38;5;10m\]\u@\h:\w \[\033[38;5;15m\]\$ "
+source ~/.bashrc
+b)
+nano ~/.bashrc
+export PS1="\[\033[38;5;13m\]\t \[\033[38;5;10m\]\u@\h:\w \[\033[38;5;6m\]\$(__git_ps1) \[\033[38;5;15m\]# "
+source ~/.bashrc
+8.
+nano ~/.bashrc
+export PS1="\[\033[38;5;13m\]\t \[\033[38;5;10m\]\u@\h:\w \[\033[38;5;6m\]\$(__git_ps1) \[\033[38;5;15m\]# "
+source ~/.bashrc
